@@ -1,16 +1,18 @@
+package house;
 public class Human {
     public static void main(String[] args) {
-        Human human = new Human("My secret", "Latest news", "Life experience", "Juicy gossip");
+        Human person = new Human("My secret", "Latest news", "Great experience", "Interesting gossip");
 
-        System.out.println("Secret: " + human.getSecret());
-        System.out.println("News: " + human.getNews());
-        System.out.println("Experience: " + human.getExperience());
-        System.out.println("Gossip: " + human.getGossip());
+        System.out.println("Secret: " + person.getSecret());
+        System.out.println("News: " + person.getNews());
+        System.out.println("Experience: " + person.getExperience());
+        System.out.println("Gossip: " + person.getGossip());
     }
-    private final String secret;
-    private final String news;
-    private final String experience;
-    private final String gossip;
+
+    private String secret;
+    private String news;
+    private String experience;
+    private String gossip;
 
     public Human(String secret, String news, String experience, String gossip) {
         this.secret = secret;
@@ -18,7 +20,6 @@ public class Human {
         this.experience = experience;
         this.gossip = gossip;
     }
-
     public String getSecret() {
         return secret;
     }
