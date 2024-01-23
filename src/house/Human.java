@@ -9,30 +9,31 @@ public class Human {
         System.out.println("Gossip: " + person.getGossip());
     }
 
-    private String secret;
-    private String news;
-    private String experience;
-    private String gossip;
+        private final String secret;
+        private final String news;
+        private final String experience;
+        private final String gossip;
 
-    public Human(String secret, String news, String experience, String gossip) {
-        this.secret = secret;
-        this.news = news;
-        this.experience = experience;
-        this.gossip = gossip;
-    }
-    public String getSecret() {
-        return secret;
-    }
+        public Human(String secret, String news, String experience, String gossip) {
+            this.secret = secret;
+            this.news = news;
+            this.experience = experience;
+            this.gossip = gossip;
+        }
 
-    public String getNews() {
-        return news;
-    }
+        public String getSecret() {
+            return secret;
+        }
 
-    public String getExperience() {
-        return experience;
-    }
+        public String getNews() {
+            return news;
+        }
 
-    public String getGossip() {
-        return gossip;
+        String getExperience() {
+            return experience;
+        }
+
+        String getGossip() {
+            return gossip;
+        }
     }
-}
